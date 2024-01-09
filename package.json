@@ -3,10 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev:local": "npx env-cmd -x -f ./.env.local next dev -p '$PORT'",
-    "start:local": "npx env-cmd -x next start -p '$PORT'",
-    "dev": "next dev",
-    "start": "next start",
+    "dev": "npx env-cmd -x next dev -p '$PORT'",
+    "start": "npx env-cmd -x next start -p '$PORT'",
     "build": "next build",
     "lint": "next lint",
     "prettier-all": "npx prettier --config .prettierrc --write ./src",
@@ -14,6 +12,7 @@
   },
   "dependencies": {
     "axios": "^1.6.5",
+    "lru-cache": "^10.1.0",
     "next": "14.0.4",
     "react": "^18",
     "react-dom": "^18"
